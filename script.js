@@ -1,1 +1,2 @@
-document.querySelectorAll('[data-wa]').forEach(el=>{el.addEventListener('click',()=>{const msg=encodeURIComponent(el.dataset.wa||'Hola Rentaly');window.open('https://wa.me/56957589906?text='+msg,'_blank','noopener');});});
+document.querySelectorAll('[data-wa]').forEach(el=>el.addEventListener('click',()=>{const msg=encodeURIComponent(el.dataset.wa||'Hola Rentaly');window.open('https://wa.me/56957589906?text='+msg,'_blank','noopener')}));
+const btn=document.querySelector('.menu-btn'),menu=document.querySelector('#menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);btn.textContent=open?'×':'☰'})}
