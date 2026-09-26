@@ -1,2 +1,3 @@
 document.querySelectorAll('[data-wa]').forEach(el=>el.addEventListener('click',()=>{const msg=encodeURIComponent(el.dataset.wa||'Hola Rentaly');window.open('https://wa.me/56957589906?text='+msg,'_blank','noopener')}));
-const btn=document.querySelector('.menu-btn'),menu=document.querySelector('#menu');if(btn&&menu){btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);btn.textContent=open?'×':'☰'})}
+const btn=document.querySelector('.menu-btn'),menu=document.querySelector('#menu');
+if(btn&&menu){const close=()=>{menu.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='☰'};btn.addEventListener('click',()=>{const open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'×':'☰'});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));window.addEventListener('resize',()=>{if(window.innerWidth>760)close()});}
