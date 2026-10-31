@@ -9,3 +9,18 @@
 @media(max-width:1020px){.page-hero{min-height:520px}.intro,.intro.reverse{grid-template-columns:1fr;gap:38px}.intro.reverse .editorial-photo{order:2}.feature-grid{grid-template-columns:1fr 1fr}.split-dark-grid{grid-template-columns:1fr;gap:38px}.contact-layout{grid-template-columns:1fr;gap:40px}.values{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.page-hero{min-height:0;display:block}.page-hero-photo{position:relative;height:330px;object-position:center}.page-hero-overlay{display:none}.page-hero-inner{padding-block:38px 48px}.page-hero-copy{max-width:none}.page-hero h1{font-size:45px}.page-hero p{font-size:17px}.intro{padding:72px 0}.editorial-photo{padding:18px}.editorial-photo img{height:360px;border-radius:45px 8px}.content-band,.split-dark,.faq-section{padding:70px 0}.feature-grid{grid-template-columns:1fr}.split-dark img{height:340px}.stats{grid-template-columns:1fr 1fr}.before-after{grid-template-columns:1fr}.ba img{height:320px}.values{grid-template-columns:1fr}.contact-layout{padding:72px 0}.whatsapp-card{padding:32px 26px}.whatsapp-card h2{font-size:36px}}
 @media(max-width:480px){.page-hero-photo{height:285px}.page-hero h1{font-size:39px}.editorial-photo img{height:300px}.stats{grid-template-columns:1fr}.before-after .ba img{height:270px}.contact-layout h1{font-size:42px}}
+
+/* Rentaly Instagram: contacto y footer, adaptable a móvil */
+.footer-meta{display:flex;align-items:center;justify-content:flex-end;gap:20px;flex-wrap:wrap}
+.instagram-footer{display:inline-flex;align-items:center;gap:8px;color:inherit;font-weight:700;text-decoration:none;white-space:nowrap}
+.instagram-footer svg{width:21px;height:21px;flex:none;color:#7519F7}
+.instagram-footer:hover,.instagram-footer:focus-visible{color:#7519F7}
+.instagram-contact{display:grid;grid-template-columns:minmax(0,1fr) 180px;align-items:center;gap:32px;margin-top:24px;margin-bottom:76px;padding:38px 42px;border-radius:28px;background:#fff;box-shadow:0 12px 40px rgba(46,44,47,.06)}
+.instagram-contact h2{margin:8px 0 12px}
+.instagram-contact p{max-width:610px}
+.instagram-dm-btn{display:inline-flex;align-items:center;gap:12px;max-width:100%;margin-top:12px}
+.instagram-dm-btn svg{width:21px;height:21px;flex:none}
+.instagram-contact-mark{display:grid;place-items:center;width:150px;height:150px;border-radius:40px;background:#f2e6ff;color:#7519F7}
+.instagram-contact-mark svg{width:85px;height:85px}
+@media(max-width:760px){.footer-meta{justify-content:center;gap:12px;text-align:center}.instagram-contact{grid-template-columns:1fr;padding:28px 22px;margin-bottom:48px}.instagram-contact-mark{display:none}.instagram-dm-btn{width:100%;justify-content:center}}
+@media(max-width:420px){.footer-meta{flex-direction:column}.instagram-contact h2{font-size:clamp(30px,9vw,42px)}}
